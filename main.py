@@ -27,3 +27,11 @@ def sayBye():
     print("Bye Bye!")
 
     sayHello()
+
+def sayHello(user_name, user_age):     
+    print("Hello", user_name, "How R U?")
+    print("YOur age is", user_age, "years old. right?")
+
+sayHello("Joung", 12)
+
+print(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
