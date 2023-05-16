@@ -13,11 +13,15 @@ print("and I'm ",myAge, "years old.")
 dead = False
 print(dead, "What?", 100)
 
-def sayHello():     
-    print("Hello How R U?")
 
-sayHello()
-sayHello()
+
+def sayHello(user_name):     
+    print("Hello", user_name, "How R U?")
+
+sayHello("Joung")
+
+sayHello("Nico")
+sayHello("Kim")
 
 def sayBye():
     print("Bye Bye!")
