@@ -11,4 +11,15 @@ print("Hello! my name is", myName)
 print("and I'm ",myAge, "years old.")
 
 dead = False
-print(dead)
+print(dead, "What?", 100)
+
+def sayHello():     
+    print("Hello How R U?")
+
+sayHello()
+sayHello()
+
+def sayBye():
+    print("Bye Bye!")
+
+    sayHello()
