@@ -58,3 +58,39 @@ def pay_tax(tax):
 
 to_pay = tax_calc(150000000)
 pay_tax(to_pay)
+
+my_name = "Joung"
+my_age = 12
+my_color_eyes = "black"
+
+print(f"Hello I'm {my_name}, I have {my_age} years in the earth, \
+{my_color_eyes} is my eye color.")
+
+def make_juice(fruit):
+    return f"{fruit} + 🥤"
+    print("this is invisible")
+
+def add_ice(juice):
+    return f"{juice} + 🧊"
+
+def add_sugar(iced_juice):
+    return f"{iced_juice} + 🍭"
+
+juice = make_juice("🍎")
+print(juice)
+cold_juice = add_ice(juice)
+print(cold_juice)
+perfect_juice = add_sugar(cold_juice)
+print(perfect_juice)
+
+if 10 < 5:
+    print("correct!")
+
+if 10 == 10:
+    print("True!")
+
+a = "Joung"
+
+if a == "Joung":
+    print("True!")
+
