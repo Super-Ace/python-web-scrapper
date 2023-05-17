@@ -35,3 +35,19 @@ def sayHello(user_name, user_age):
 sayHello("Joung", 12)
 
 print(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+def tax_calculator(money):
+    print(money * 0.35)
+
+tax_calculator(1500000000)
+
+def say_hello(user_name="anonymous"):
+    print("hello", user_name)
+
+say_hello("Joung")
+say_hello()
+
+def plus(a, b):
+    print(a + b)
+
+
