@@ -1,3 +1,4 @@
+"""
 a = 2
 b = 3
 c = a + b
@@ -126,3 +127,28 @@ elif age == 60 or age == 70:
     print("Let's party!")
 else:
     print("Go ahead!")
+
+distance = 0
+
+while distance < 20:
+    print("I'm runnning", distance, "km")
+    distance = distance + 1
+"""
+from random import randint, random
+
+print("Welcome to Python Casino")
+pc_choice = randint(1, 10) 
+
+playing = True
+
+while playing:
+    user_choice = int(input("Choose number(1 ~ 10) :"))
+
+    if user_choice == pc_choice:
+        print("You win!")
+        playing = False
+    elif user_choice > pc_choice:
+        print("Lower!")
+    elif user_choice < pc_choice:
+        print("Higher!")
+
