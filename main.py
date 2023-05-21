@@ -133,7 +133,7 @@ distance = 0
 while distance < 20:
     print("I'm runnning", distance, "km")
     distance = distance + 1
-"""
+
 from random import randint, random
 
 print("Welcome to Python Casino")
@@ -152,3 +152,64 @@ while playing:
     elif user_choice < pc_choice:
         print("Higher!")
 
+
+days = ("Mon", "Tue", "Wed")
+
+print(days[-2])
+
+player = {
+    'name' : 'joung',
+    'age': 47,
+    'alive': True,
+    'fav_food':["🍕", "🍔"]
+}
+
+# print(player.get('age'))
+# print(player.get('fav_food'))
+# print(player['fav_food'])
+# print(player)
+# player.pop('age')
+# print(player)
+# print(player)
+# player['xp'] = 1500
+# print(player)
+
+print(player)
+player['fav_food'].append("🥗")
+print(player.get('fav_food'))
+print(player['fav_food'])
+
+print("joung".endswith("n"))
+
+numbers = [5, 2, 4, 8, 3, "True", True, 12]
+
+numbers.append(["🍔","🌭"])
+print(numbers)
+# numbers.clear()
+# print(numbers)
+
+print(numbers[-1])
+
+numbers = (1, 2, 3, 4, 5, True, "xxxxx")
+print(numbers.count(3))
+print(numbers[2])
+"""
+
+player = {
+    "name" : "joung",
+    "age" : 12,
+    "alive" : True,
+    "fav_food" : ("🍕", "🍔"),
+    "friend": {
+        "name" : "kim",
+        "age" : 45,
+        "alive" : True,
+        "fav_food": ["🥓"]
+    }
+}
+
+player['fav_food'] = "🍉"
+player.pop("alive")
+player["friend"]["fav_food"].append("🍞")
+# print(player['friend']['fav_food'])
+print(player)
