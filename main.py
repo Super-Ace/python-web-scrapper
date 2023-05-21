@@ -114,4 +114,15 @@ elif winner == 50:
 else:
     print("else")
 
+age = int(input("how old are you?"))
+print("User answer", age)
+print(type(age))
 
+if age < 18:
+    print("You can't drink!")
+elif age >= 18 and age <=35:
+    print("You drink beer!")
+elif age == 60 or age == 70:
+    print("Let's party!")
+else:
+    print("Go ahead!")
