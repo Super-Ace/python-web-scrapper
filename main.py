@@ -101,13 +101,17 @@ if password_correct:
 else:
     print("Wrong password")
 
-winner = 5
+winner = 500
 
-if winner > 10:
-    print("Winner is greater than 10")
-elif winner < 10:
-    print("Winner is less than 10")
+if winner <= 10:
+    print("if")
+elif winner <= 25:
+    print("elif 1")
+elif winner == 0:
+    print("elif 2")
+elif winner == 50:
+    print("elif 3")
 else:
-    print("Winner is 10")
+    print("else")
 
 
