@@ -193,7 +193,6 @@ print(numbers[-1])
 numbers = (1, 2, 3, 4, 5, True, "xxxxx")
 print(numbers.count(3))
 print(numbers[2])
-"""
 
 player = {
     "name" : "joung",
@@ -213,3 +212,28 @@ player.pop("alive")
 player["friend"]["fav_food"].append("🍞")
 # print(player['friend']['fav_food'])
 print(player)
+"""
+
+websites = (
+    "google.com",
+    "airbnb.com",
+    "https://twitter.com",
+    "facebook.com",
+    "https://tiktok.com"
+)
+
+for website in websites:
+    # print("potato is equals to", website)
+    """
+    if website.startswith("https://"):
+        print("good to go")
+    else:
+        print("we have to fix it")
+    """
+    if not website.startswith("https://"):
+    # if website.startswith("https://") == False:
+        # print("have to fix")
+        website = f"https://{website}"
+        
+    print(website)
+        
