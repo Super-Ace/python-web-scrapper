@@ -213,6 +213,7 @@ player["friend"]["fav_food"].append("🍞")
 # print(player['friend']['fav_food'])
 print(player)
 """
+from requests import get
 
 websites = (
     "google.com",
@@ -235,5 +236,5 @@ for website in websites:
         # print("have to fix")
         website = f"https://{website}"
         
-    print(website)
+    get(website)
         
