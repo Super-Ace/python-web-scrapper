@@ -213,6 +213,9 @@ player["friend"]["fav_food"].append("🍞")
 # print(player['friend']['fav_food'])
 print(player)
 """
+
+from random import randint
+
 from requests import get
 
 websites = (
