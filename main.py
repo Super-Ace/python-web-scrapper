@@ -223,6 +223,8 @@ websites = (
     "https://tiktok.com"
 )
 
+results = {}
+
 for website in websites:
     # print("potato is equals to", website)
     """
@@ -236,5 +238,12 @@ for website in websites:
         # print("have to fix")
         website = f"https://{website}"
         
-    get(website)
+    response = get(website)
+    if response.status_code == 200:
+        # print(f"{website} is OK")
+        results[website] = "OK"
+    else:
+        # print(f"{website} is not OK")
+        results[website] = "FAILED"
         
+print(results)
