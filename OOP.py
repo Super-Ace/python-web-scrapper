@@ -29,12 +29,31 @@ class Dog:
         self.breed = breed
         self.age = age
 
+    def sleep(self):
+        print("zzzzzz......")
+
 class GuardDog(Dog):
+
+    def __init__(self, name, breed):
+        super().__init__(
+            name,
+            breed,
+            5.0,
+        )
+        self.aggresive = True
 
     def rrrrr(self):
         print("stay away!")  
 
 class Puppy(Dog):
+
+    def __init__(self, name, breed):
+        super().__init__(
+            name,
+            breed,
+            0.1,
+        )
+        self.spoiled = True
 
     def __str__(self):
         return f"{self.breed} puppy named {self.name}"
@@ -47,10 +66,10 @@ ruffus = Puppy(
     breed = "Beagle",
 )
 
-bibi = Puppy(
+bibi = GuardDog(
     name = "Bibi",
     breed = "Dalmatian"
 )
 
-ruffus.introduce()
-bibi.introduce()
+ruffus.sleep()
+bibi.sleep()
