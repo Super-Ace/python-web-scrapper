@@ -23,53 +23,18 @@ teams = {
     "Team Blue" : [lynn]
 }
 
-class Dog:
-    def __init__(self, name, breed, age):
-        self.name = name
-        self.breed = breed
-        self.age = age
+class Puppy:
 
-    def sleep(self):
-        print("zzzzzz......")
-
-class GuardDog(Dog):
-
-    def __init__(self, name, breed):
-        super().__init__(
-            name,
-            breed,
-            5.0,
-        )
-        self.aggresive = True
-
-    def rrrrr(self):
-        print("stay away!")  
-
-class Puppy(Dog):
-
-    def __init__(self, name, breed):
-        super().__init__(
-            name,
-            breed,
-            0.1,
-        )
-        self.spoiled = True
-
-    def __str__(self):
-        return f"{self.breed} puppy named {self.name}"
-
-    def woof_woof(self):
-        print("Woof Woof!")
+    def __init__(self):
+        self.name = "Ruffus"
+        self.age = 0.1
+        self.breed = "Beagle"
     
-ruffus = Puppy(
-    name = "Ruffus",
-    breed = "Beagle",
-)
+ruffus = Puppy()
+bibi = Puppy()
 
-bibi = GuardDog(
-    name = "Bibi",
-    breed = "Dalmatian"
-)
-
-ruffus.sleep()
-bibi.sleep()
+print(
+    ruffus.name,
+    ruffus.age, 
+    ruffus.breed,
+    )
