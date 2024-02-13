@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 import time
 from bs4 import BeautifulSoup
+import csv
 
 p = sync_playwright().start()
 
@@ -47,7 +48,7 @@ jobs_db = []
 
 for job in jobs:
     link = f"https://www.wanted.co.kr{job.find('a')['href']}"
-    title = job.find("JobCard_title__ddkwM")
+    title = job.find("strong", class_="JobCard_title__ddkwM").text
     company_name = job.find("span", class_="JobCard_companyName__vZMqJ").text
     location = job.find("span", class_="JobCard_location__2EOr5").text
     reward = job.find("span", class_="JobCard_reward__sdyHn").text
@@ -60,5 +61,29 @@ for job in jobs:
     }
     jobs_db.append(job)
 
-print(jobs_db)
-print(len(jobs_db))
+# print(jobs_db)
+# print(len(jobs_db))
+    
+# file = open("jobs.csv", "w")
+file = open("jobs.csv", mode="w", encoding="utf-8")
+writer = csv.writer(file)
+writer.writerow(
+    ["Title", 
+     "Company", 
+     "Location", 
+     "Reward", 
+     "Link",
+     ]
+)
+
+for job in jobs_db:
+    # writer.writerow(job.keys())
+    writer.writerow(job.values())
+file.close()
+
+keywords = [
+    "flutter",
+    "nextjs",
+    "kotlin",
+]
+
