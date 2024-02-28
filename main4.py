@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from extractore.indeed import extract_indeed_jobs
+from extractors.indeed import extract_indeed_jobs
 from extractors.wwr import extract_wwr_jobs
 
 app = Flask("JobScrapper")
